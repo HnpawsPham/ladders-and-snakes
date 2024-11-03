@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cookie;
+}
+@font-face {
+    font-family: cookie;
+    src: url(../fonts/cookie.otf);
+}
+:root{
+    --blue: #387478;
+    --cyan: #E2F1E7;
+    --dark: rgb(22, 22, 22);
+    --orange: #E85C0D;
+}
+.blue{
+    background-color: var(--blue);
+    color: white;
+}
+
+.cyan{
+    color: rgb(63, 59, 59);
+    background-color: var(--cyan);
+}
+
+#noti{
+    color: var(--black);
+    padding: 0 20px;
+    width: 80vw;
+    min-height: 10vh;
+    background-color: white;
+    filter: drop-shadow(0 0 10px black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin: -12vh 0 0 9vw;
+    border-radius: 10px;
+    z-index: 500;
+}
+
+.hidden{
+    display: none !important;
+}
