@@ -27,7 +27,7 @@
 #noti{
     color: var(--black);
     padding: 0 20px;
-    width: 80vw;
+    width: 60vw;
     min-height: 10vh;
     background-color: white;
     filter: drop-shadow(0 0 10px black);
@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    margin: -12vh 0 0 9vw;
+    margin: -12vh 0 0 20vw;
     border-radius: 10px;
     z-index: 500;
 }

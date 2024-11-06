@@ -1,20 +1,19 @@
 body {
     background-color: var(--dark);
-
+    /* overflow: hidden; */
 }
 
 #main {
     position: relative;
     margin: 15vh 10vw;
     width: 80vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(10, 110px);
+    gap: 3px;
 }
 
 .block {
-    margin: 2px;
+    position: relative;
     width: 110px;
     height: 110px;
     border-radius: 10px;
@@ -29,16 +28,16 @@ body {
 }
 
 .ladder {
-    z-index: 10;
+    z-index: 1;
     position: absolute;
     object-fit: contain;
 }
 
-#players .player{
+.player{
+    z-index: 10;
     width: 100px;
     height: 100px;
     position: absolute;
-    transition: all 0.3s;
 }
 .player img{
     width: inherit;
@@ -92,6 +91,7 @@ body {
 
 /* wheel */
 #container{
+    z-index: 1000;
     filter: drop-shadow(0 0 100px rgb(0, 0, 0));
     z-index: 10000;
     margin: -85vh 35vw;
@@ -154,7 +154,7 @@ body {
     background-color: var(--clr);
     transform-origin: bottom right;
     transform: rotate(calc(60deg * var(--i)));
-    clip-path: polygon(0 0, 73.3% 0, 100% 100%, 0 73.3%);
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 70%);
     display: flex;
     justify-content: center;
     align-items: center;
